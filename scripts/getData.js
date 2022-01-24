@@ -40,7 +40,7 @@ const getData = () => {
     }
 
     const getGoods = () => {
-        fetch('cross-sell-dbase/dbase.json')
+        fetch('https://iphone-f31ee-default-rtdb.firebaseio.com/db.json')
             .then((response) => {
                 if (response.ok) {
                     return response.json()
